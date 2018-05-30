@@ -3,13 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/python:2-jessie
-      steps:
+    steps:
       - checkout
       - run: echo "Hello World"
-   test:
+  test:
     docker:
       - image: circleci/python:2-jessie
-      steps:
+    steps:
       - checkout
       - run: echo "Hello World"
 workflows:
